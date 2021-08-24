@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
 
-        if($(window).scroTop() > 0) {
+        if($(window).scrollTop() > 0) {
             $('.top').show();
         }else{
             $('.top').hide();
