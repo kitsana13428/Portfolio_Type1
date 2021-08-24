@@ -8,5 +8,28 @@ $(document).ready(function(){
 
         $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
+
+        if($(window).scroTop() > 0) {
+            $('.top').show();
+        }else{
+            $('.top').hide();
+        }
     });
+
+    // สกอให้ลื่นไหล
+
+    $('a[href*="#"]').on ('click',function(e){
+        e.preventDefault();
+        
+        $('html, body').animate({
+
+            scrollTop : $($(this).attr('href')).offset().top,
+
+        },
+            500,
+            'linear'
+        );
+
+    });
+
 });
