@@ -222,8 +222,15 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box span {
     font-size: 4rem;
-    color: var(--yellow);
+    color: rgb(238, 255, 0);
 }
+
+/* .about .row .counter .box .s2 span {
+    font-size: 4rem;
+    color: var(--yellow);
+} */
+
+
 
 .about .row .counter .box h3 {
     font-size: 2rem;
@@ -236,13 +243,13 @@ header .navbar ul li a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
-    padding-left: 3rem;
+    padding-left: 5rem;
 }
 
 .education .box-container .box {
     width: 27rem;
     margin: 4rem 1rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
     border-left: .2rem solid #fff;
     position: relative;
 }
