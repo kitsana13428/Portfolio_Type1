@@ -81,6 +81,19 @@ section{
     color: var(--yellow);
 }
 
+#typing { /*อนิเมชั่น*/
+    width: 0ch;
+    float: left;
+    white-space: nowrap;
+    animation: typing 4s steps(22) 1s infinite alternate;
+    overflow: hidden;
+}
+
+#crow { /*เคอเซอร์ อนิเมชั่น*/
+    float: left;
+    animation: crow 0.5s linear 0s infinite;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -384,7 +397,14 @@ header .navbar ul li a:hover{
 }
 
 
-
+@keyframes typing { /*อนิเมชั่น*/
+    from {
+        width: 0ch;
+    }
+    to{
+        width: 23.5ch; /*ความห่างท้ายบรรทัด*/
+    }
+}
 
 @media (max-width:1200px){
 
